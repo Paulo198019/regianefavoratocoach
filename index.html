@@ -1,98 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regiane Favorato | Mentoria e Coaching de Carreira</title>
-  <meta name="description" content="Mentoria e coaching de carreira para profissionais que buscam liderança, transição segura e posicionamento de alto valor no mercado.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nail Designer | Certificação Profissional</title>
 
-  <!-- CSS -->
-  css/style.css
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0c0c0c;
+  color: #fff;
+}
+
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  padding: 15px 32px;
+  background: #d9534f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at right, #1b1b1b, #000);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #d4af37;
+}
+
+.hero h2 {
+  font-weight: 300;
+  margin: 10px 0 20px;
+}
+
+.hero p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* BENEFÍCIOS */
+.benefits {
+  background: #111;
+  text-align: center;
+}
+
+.benefits-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.benefit i {
+  font-size: 30px;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+/* CERTIFICADOS */
+.certs {
+  background: #000;
+}
+
+.cert-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.cert-card {
+  border: 1px solid #d4af37;
+  padding: 30px;
+  text-align: center;
+}
+
+/* PARA QUEM */
+.target {
+  background: linear-gradient(135deg, #0c0c0c, #1d1d1d);
+}
+
+.target ul {
+  margin-top: 25px;
+  list-style: none;
+}
+
+.target li {
+  margin-bottom: 12px;
+}
+
+/* SOBRE */
+.about {
+  background: #111;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  background: #000;
+  color: #aaa;
+}
+
+@media(max-width: 768px) {
+  .hero h1 { font-size: 36px; }
+}
+</style>
 </head>
+
 <body>
 
-<header class="header">
-  <div class="container">
-    <h1 class="logo">Regiane Favorato</h1>
-
-    <nav class="nav">
-      #sobreSobre</a>
-      #servicosServiços</a>
-      <a href="#sos</a>
-      #contatoContato</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h2>Transforme sua trajetória com estratégia.</h2>
+<section class="hero section">
+  <div class="hero-text">
+    <h1>NAIL DESIGNER</h1>
+    <h2>Certificação Profissional</h2>
     <p>
-      Mentoria e Coaching de Carreira para profissionais que buscam liderança,
-      transição segura e posicionamento de alto valor no mercado.
+      Aprenda do zero ao avançado e conquiste sua independência
+      financeira como Nail Designer profissional.
     </p>
+    <a href="#" class="btn">QUERO ME INSCREVER</a>
+  </div>
+</section>
 
-    <div class="hero-actions">
-      <a hrefosConhecer Mentorias</a>
-      https://www.instagram.com/Instagram</a>
+<section class="benefits section">
+  <h2>Por que escolher esse curso?</h2>
+
+  <div class="benefits-grid">
+    <div class="benefit">
+      <i class="fa-solid fa-certificate"></i>
+      <h3>Certificado</h3>
+      <p>Reconhecido em todo o Brasil.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-laptop"></i>
+      <h3>100% Online</h3>
+      <p>Estude no seu tempo.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-star"></i>
+      <h3>Conteúdo Premium</h3>
+      <p>Técnicas profissionais.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-headset"></i>
+      <h3>Suporte</h3>
+      <p>Acompanhamento exclusivo.</p>
     </div>
   </div>
 </section>
 
-<section id="sobre" class="section">
-  <div class="container">
-    <h2>Sobre Regiane Favorato</h2>
-    <p>
-      Especialista em desenvolvimento humano, Regiane une técnica e experiência prática
-      para guiar profissionais em momentos decisivos, com foco em posicionamento,
-      clareza e crescimento sustentável.
-    </p>
+<section class="certs section">
+  <h2>Certificações Inclusas</h2>
+
+  <div class="cert-grid">
+    <div class="cert-card">Nail Designer Iniciante</div>
+    <div class="cert-card">Nail Designer Intermediário</div>
+    <div class="cert-card">Nail Designer Avançado</div>
   </div>
 </section>
 
-<section id="servicos" class="section gray">
-  <div class="container">
-    <h2>Como posso te ajudar</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Mentoria Individual</h3>
-        <p>Aceleração profissional com estratégias personalizadas.</p>
-      </div>
-
-      <div class="card">
-        <h3>Coaching de Carreira</h3>
-        <p>Transições seguras, clareza e planejamento estratégico.</p>
-      </div>
-
-      <div class="card">
-        <h3>Branding Pessoal</h3>
-        <p>Posicionamento estratégico e autoridade no mercado.</p>
-      </div>
-    </div>
-  </div>
+<section class="target section">
+  <h2>Esse curso é para você que:</h2>
+  <ul>
+    <li>✔ Quer entrar no mercado de unhas</li>
+    <li>✔ Deseja ganhar bem</li>
+    <li>✔ Quer trabalhar por conta própria</li>
+    <li>✔ Busca liberdade financeira</li>
+  </ul>
+  <a href="#" class="btn">COMEÇAR AGORA</a>
 </section>
 
-<section id="cursos" class="section cta">
-  <div class="container center">
-    <h2>Pronto para o próximo nível?</h2>
-    <p>Acesse meus cursos exclusivos e comece sua transformação agora mesmo.</p>
-
-    <!-- HOTMART -->
-    <a href="ay.hotmart.com/SEU_CODIGO_AQUI
-      Ver Cursos na Hotmart
-    </a>
-  </div>
+<section class="about section">
+  <h2>Olá, seja bem-vinda!</h2>
+  <p>
+    Este curso foi desenvolvido para transformar iniciantes
+    em profissionais reconhecidas no mercado de Nail Designer.
+  </p>
 </section>
 
-<footer id="contato" class="footer">
-  <div class="container">
-    <p>© 2026 Regiane Favorato — Todos os direitos reservados.</p>
-  </div>
+<footer>
+  © 2026 - Curso Nail Designer. Todos os direitos reservados.
 </footer>
 
-<!-- JS -->
-js/script.js</script>
 </body>
 </html>
-``
