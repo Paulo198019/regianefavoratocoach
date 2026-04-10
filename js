@@ -1,4 +1,5 @@
 // Efeito de rolagem suave para links internos
+<script src="js/script.js"></script>
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    anchor.addEventListener('click', function (e) {
        e.preventDefault();
