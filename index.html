@@ -1,226 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regiane Favorato | Mentoria & Coaching de Carreira</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regiane Favorato | Mentoria & Coaching</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-body{
-  background:#0c0c0c;
-  color:#fff;
-  line-height:1.6;
-}
-section{
-  padding:90px 10%;
-}
-h1,h2,h3{
-  color:#d4af37;
-}
-p{
-  color:#ddd;
-}
-.btn{
-  display:inline-block;
-  padding:15px 32px;
-  background:#d9534f;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-  border-radius:4px;
-  margin-top:25px;
-}
-
-/* HEADER */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:#000;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 10%;
-  z-index:10;
-}
-header nav a{
-  color:#ccc;
-  text-decoration:none;
-  margin:0 15px;
-  font-size:14px;
-}
-header nav a:hover{
-  color:#d4af37;
-}
-
-/* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  background:radial-gradient(circle at right,#1b1b1b,#000);
-  padding-top:140px;
-}
-.hero-content{
-  max-width:650px;
-}
-.hero h1{
-  font-size:46px;
-}
-.hero h2{
-  font-weight:300;
-  margin:20px 0;
-}
-
-/* SOBRE */
-.about{
-  background:#111;
-  display:grid;
-  grid-template-columns:1fr;
-  gap:30px;
-}
-
-/* PILARES */
-.pillars{
-  background:#000;
-  text-align:center;
-}
-.pillars-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:40px;
-  margin-top:50px;
-}
-.pillar i{
-  font-size:32px;
-  color:#d4af37;
-  margin-bottom:15px;
-}
-
-/* ECOSSISTEMA */
-.ecosystem{
-  background:#111;
-  text-align:center;
-}
-
-/* SOCIAL */
-.social{
-  background:linear-gradient(135deg,#0c0c0c,#1d1d1d);
-  text-align:center;
-}
-.social a{
-  display:block;
-  margin:10px 0;
-  color:#d4af37;
-  text-decoration:none;
-}
-
-/* FOOTER */
-footer{
-  background:#000;
-  text-align:center;
-  padding:40px 10%;
-  font-size:14px;
-  color:#aaa;
-}
-
-@media(max-width:768px){
-  h1{font-size:34px;}
-}
-</style>
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header>
-  <div><strong>Regiane Favorato</strong> | Mentoria & Coaching</div>
+  <div class="logo">Regiane Favorato <span>Mentoria & Coaching</span></div>
   <nav>
-    Início
-    Sobre
-    Metodologia
-    Cursos
-    Contato
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#pilares">Metodologia</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#contato" class="btn-header">Acelerar carreira</a>
   </nav>
-  Acelerar Carreira</a>
 </header>
 
 <section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+
   <div class="hero-content">
     <h1>Transforme sua trajetória profissional</h1>
-    <h2>com quem entende de estratégia e resultados</h2>
+    <h2>com estratégia, clareza e posicionamento de mercado</h2>
     <p>
-      Mentoria personalizada e coaching de carreira para profissionais que buscam
-      evolução, transição segura ou posicionamento de liderança.
+      Mentoria e coaching de carreira para profissionais que desejam
+      crescimento, transição segura ou liderança.
     </p>
-    Sessão Estratégica</a>
+    <a href="#contato" class="btn-primary">Agendar Sessão Estratégica</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="img/hero.jpg" alt="Mentoria de Carreira">
   </div>
 </section>
 
 <section class="about" id="sobre">
-  <h2>Conheça sua Mentora: Regiane Favorato</h2>
-  <p>
-    Especialista em desenvolvimento humano e carreira, Regiane une técnica e
-    experiência prática para guiar profissionais em momentos decisivos.
-    O foco é construir posicionamento estratégico, marca pessoal forte e
-    resultados mensuráveis.
-  </p>
-  <ul>
-    <li>✔ Foco em resultados tangíveis</li>
-    <li>✔ Metodologia validada de mercado</li>
-    <li>✔ Acompanhamento próximo e personalizado</li>
-  </ul>
+  <div class="about-img">
+    <img src="img/regiane-bnw.jpg" alt="Mentora">
+  </div>
+
+  <div class="about-text">
+    <h2>Conheça sua mentora</h2>
+    <p>
+      Especialista em desenvolvimento humano e carreira, Regiane Favorato
+      atua com foco em decisões estratégicas, posicionamento profissional
+      e resultados concretos.
+    </p>
+    <ul>
+      <li>✔ Metodologia validada</li>
+      <li>✔ Acompanhamento próximo</li>
+      <li>✔ Foco em resultado real</li>
+    </ul>
+  </div>
 </section>
 
-<section class="pillars" id="metodologia">
+<section class="pillars" id="pilares">
   <h2>Nossos Pilares</h2>
+
   <div class="pillars-grid">
-    <div class="pillar">
+    <div class="pillar-card">
       <i class="fa-solid fa-bullseye"></i>
-      <h3>Direcionamento Estratégico</h3>
-      <p>Clareza de objetivos e próximos passos.</p>
+      <h3>Direcionamento</h3>
+      <p>Clareza e estratégia para tomar decisões profissionais.</p>
     </div>
-    <div class="pillar">
+
+    <div class="pillar-card">
       <i class="fa-solid fa-user-tie"></i>
-      <h3>Posicionamento Profissional</h3>
-      <p>Marca pessoal forte e coerente.</p>
+      <h3>Posicionamento</h3>
+      <p>Marca pessoal forte e autoridade no mercado.</p>
     </div>
-    <div class="pillar">
+
+    <div class="pillar-card">
       <i class="fa-solid fa-chart-line"></i>
-      <h3>Evolução de Carreira</h3>
+      <h3>Evolução</h3>
       <p>Crescimento sustentável e consistente.</p>
     </div>
   </div>
 </section>
 
-<section class="ecosystem" id="cursos">
+<section class="courses" id="cursos">
   <h2>Ecossistema de Aprendizado</h2>
-  <p>
-    Para quem busca flexibilidade e aprofundamento contínuo no próprio ritmo.
-  </p>
-  Conhecer Cursos na Hotmart</a>
+  <p>Conteúdo especializado para estudar no seu ritmo.</p>
+  <a href="#" class="btn-primary">Acessar cursos na Hotmart</a>
 </section>
 
 <section class="social" id="contato">
-  <h2>Conecte-se e Acompanhe</h2>
-  linkedin.com/in/regiane-favorato
-  @favorato
+  <h2>Conecte-se</h2>
+  <p>
+    <a href="https://linkedin.com/in/regiane-favorato" target="_blank">LinkedIn</a><br>
+    <a href="https://instagram.com/favorato" target="_blank">@favorato</a>
+  </p>
 </section>
 
 <footer>
-  <p>Regiane Favorato – Mentoria & Coaching de Carreira</p>
-  <p>© 2026 Todos os direitos reservados.</p>
-  <p>Política de Privacidade | Termos de Uso</p>
+  <p>© 2026 Regiane Favorato – Mentoria & Coaching de Carreira</p>
 </footer>
 
 </body>
