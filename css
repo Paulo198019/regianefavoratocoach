@@ -1,162 +1,85 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
-  background: #0c0c0c;
-  color: #fff;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* HEADER */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #000;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.logo span {
-  color: #d4af37;
-}
-
-nav a {
-  margin-left: 20px;
-  color: #ccc;
-  text-decoration: none;
-}
-
-.btn-header {
-  background: #d9534f;
-  padding: 10px 18px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-/* HERO */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  padding: 120px 10%;
-  position: relative;
-  background: radial-gradient(circle at left, #1b1b1b, #000);
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3));
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .hero h1 {
-  color: #d4af37;
-  font-size: 42px;
+  max-width: 800px;
+  margin: 0 auto 20px;
 }
 
-.hero h2 {
-  font-weight: 300;
-  margin: 20px 0;
-}
-
-.hero p {
-  color: #ddd;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: #d9534f;
-  padding: 14px 30px;
-  border-radius: 4px;
-  color: #fff;
+.btn-cta {
+  display: inline-block;
+  margin-top: 20px;
+  background: #22c55e;
+  color: #0f172a;
+  padding: 15px 30px;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 600;
+  border-radius: 8px;
 }
 
-/* HERO IMAGE */
-.hero-image {
-  position: relative;
-  z-index: 2;
+.btn-cta:hover {
+  background: #16a34a;
 }
 
-.hero-image img {
-  max-width: 100%;
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* ABOUT */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  padding: 100px 10%;
-  background: #111;
-}
-
-.about img {
-  width: 100%;
-}
-
-/* PILLARS */
-.pillars {
-  padding: 100px 10%;
-  background: #000;
+.section h2 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
+.section ul {
+  list-style: none;
+  padding: 0;
 }
 
-.pillar-card {
-  background: #111;
-  padding: 30px;
-  border: 1px solid #d4af37;
-}
-
-.pillar-card i {
-  font-size: 30px;
-  color: #d4af37;
+.section ul li {
   margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
 }
 
-/* COURSES */
-.courses {
-  padding: 100px 10%;
-  background: #111;
+.section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+}
+
+.destaque {
+  background: #f8fafc;
+}
+
+.cta-final {
   text-align: center;
+  background: #e5e7eb;
 }
 
-/* SOCIAL */
-.social {
-  padding: 80px 10%;
-  text-align: center;
-  background: #000;
-}
-
-.social a {
-  color: #d4af37;
-  text-decoration: none;
-}
-
-/* FOOTER */
 footer {
-  padding: 30px;
   text-align: center;
-  background: #000;
-  font-size: 14px;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 }
