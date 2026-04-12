@@ -1,222 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regiane Favorato | Mentoria & Coaching</title>
-
-  <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap
-
-  <!-- FONT AWESOME -->
-  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #0c0c0c;
-      color: #ffffff;
-    }
-
-    header {
-      background: #000;
-      padding: 20px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header span {
-      color: #d4af37;
-    }
-
-    nav a {
-      color: #ccc;
-      margin-left: 20px;
-      text-decoration: none;
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 80px 10%;
-      background:
-        linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
-        url("img/hero.jpg") center/cover no-repeat;
-    }
-
-    .hero h1 {
-      color: #d4af37;
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .hero h2 {
-      font-weight: 300;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      color: #ddd;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      background: #d9534f;
-      color: #fff;
-      padding: 14px 32px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    section {
-      padding: 100px 10%;
-    }
-
-    .about {
-      background: #111;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .about img {
-      width: 100%;
-      border-radius: 6px;
-    }
-
-    .pillars {
-      background: #000;
-      text-align: center;
-    }
-
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .pillar {
-      background: #111;
-      padding: 30px;
-      border: 1px solid #d4af37;
-    }
-
-    .pillar i {
-      font-size: 28px;
-      color: #d4af37;
-      margin-bottom: 10px;
-    }
-
-    .courses, .contact {
-      background: #111;
-      text-align: center;
-    }
-
-    footer {
-      background: #000;
-      padding: 30px;
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    @media (max-width: 768px) {
-      .hero, .about {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
+<!DOCTYPE html><!DOCTYPE</head>
 
 <body>
 
-<header>
-  <div>Regiane Favorato <span>Mentoria & Coaching</span></div>
-  <nav>
-    Início
-    Sobre
-    Metodologia
-    Cursos
-    Contato
-  </nav>
+<header class="hero">
+  <h1>Construa uma carreira estratégica  
+    e alcance o próximo nível profissional</h1>
+
+  <p>Mentoria de carreira para profissionais que entregam muito,
+     mas ainda não ocupam posições de decisão.</p>
+
+  <a class="btn-cta" href="https://wa.me/5511972969530" target="_blank">
+    Quero acelerar minha carreira
+  </a>
 </header>
 
-<section class="hero">
-  <div>
-    <h1>Transforme sua trajetória profissional</h1>
-    <h2>Estratégia, posicionamento e resultados reais</h2>
-    <p>
-      Mentoria e coaching de carreira para profissionais que desejam crescimento,
-      transição segura e liderança.
-    </p>
-    <a class="btn" href="#">Agendar Sessão Estratégica</a>
-  </div>
+<main>
+
+<section class="section">
+  <h2>Essa mentoria é para você que:</h2>
+  <ul>
+    <li>Entrega resultados, mas não é promovido</li>
+    <li>Quer sair da execução e ganhar visão estratégica</li>
+    <li>Busca clareza de posicionamento profissional</li>
+    <li>Quer crescimento com método, não sorte</li>
+  </ul>
 </section>
 
-<section class="about">
-  <img src="img/regiane-bnw.jpg" alt="Mentora">
-  <div>
-    <h2>Conheça sua Mentora</h2>
-    <p>
-      Regiane Favorato é especialista em desenvolvimento humano e carreira,
-      atuando com foco em decisões estratégicas, marca pessoal e evolução profissional.
-    </p>
-    <ul>
-      <li>✔ Metodologia validada</li>
-      <li>✔ Acompanhamento personalizado</li>
-      <li>✔ Resultados mensuráveis</li>
-    </ul>
-  </div>
-</section>
-
-<section class="pillars">
-  <h2>Nossos Pilares</h2>
-  <div class="pillars-grid">
-    <div class="pillar">
-      <i class="fa-solid fa-bullseye"></i>
-      <h3>Direcionamento</h3>
-      <p>Clareza e foco estratégico.</p>
-    </div>
-    <div class="pillar">
-      <i class="fa-solid fa-user-tie"></i>
-      <h3>Posicionamento</h3>
-      <p>Autoridade e marca pessoal.</p>
-    </div>
-    <div class="pillar">
-      <i class="fa-solid fa-chart-line"></i>
-      <h3>Evolução</h3>
-      <p>Crescimento consistente.</p>
-    </div>
-  </div>
-</section>
-
-<section class="courses">
-  <h2>Cursos e Conteúdos</h2>
-  <p>Acesse o ecossistema de aprendizado completo.</p>
-  <a class="btn" href="#">Acessar Cursos</a>
-</section>
-
-<section class="contact">
-  <h2>Conecte-se</h2>
+<section class="section destaque">
+  <h2>Como funciona</h2>
   <p>
-    LinkedIn • Instagram
+    A mentoria é feita em sessões individuais,
+    com diagnóstico, estratégia e plano de ação
+    personalizado para sua realidade profissional.
   </p>
 </section>
 
+<section class="section">
+  <h2>Sobre a mentora</h2>
+  <p>
+    Regiane Favorato é executiva e especialista em desenvolvimento
+    profissional, com trajetória de crescimento da área técnica
+    até cargos de liderança estratégica.
+  </p>
+</section>
+
+<section class="section cta-final">
+  <h2>Chegou a hora de decidir</h2>
+
+  <a class="btn-cta" href="https://wa.me/5511972969530" target="_blank">
+    Agendar conversa no WhatsApp
+  </a>
+</section>
+
+</main>
+
 <footer>
-  © 2026 Regiane Favorato – Mentoria & Coaching de Carreira
+  <p>© 2026 - Regiane Favorato • Todos os direitos reservados</p>
 </footer>
 
 </body>
 </html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Regiane Favorato | Coach de Carreira Executiva</title>
+
+  <meta name="description" content="Aceleração de carreira para profissionais que querem sair da execução e alcançar cargos estratégicos com método e posicionamento." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
