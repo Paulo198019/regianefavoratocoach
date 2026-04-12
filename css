@@ -6,29 +6,24 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #ffffff;
   color: #1f2933;
+  background: #ffffff;
   line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 /* HERO */
 
 .hero {
-  height: 95vh;
-  background: linear-gradient(
-      rgba(15, 23, 42, 0.85),
-      rgba(15, 23, 42, 0.85)
-    ),
-    url("../img/hero.jpg") center/cover no-repeat;
-
-  display: flex;
-  align-items: center;
-}
-
-.hero-content {
-  max-width: 900px;
-  padding: 40px;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
   color: #ffffff;
+  padding: 120px 20px;
+  text-align: center;
 }
 
 .hero h1 {
@@ -37,8 +32,9 @@ body {
 }
 
 .hero p {
-  max-width: 600px;
   font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
 }
 
 /* BOTÕES */
@@ -46,11 +42,11 @@ body {
 .btn-primary,
 .btn-secondary {
   display: inline-block;
-  margin-top: 30px;
-  padding: 15px 32px;
-  border-radius: 8px;
+  margin-top: 35px;
+  padding: 16px 34px;
   font-weight: bold;
   text-decoration: none;
+  border-radius: 8px;
 }
 
 .btn-primary {
@@ -66,9 +62,16 @@ body {
 /* SEÇÕES */
 
 .section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
+  padding: 90px 20px;
+}
+
+.section.light {
+  background: #f8fafc;
+}
+
+.section.dark {
+  background: #0f172a;
+  color: white;
 }
 
 .section h2 {
@@ -86,33 +89,27 @@ body {
 }
 
 .card {
-  background: #f1f5f9;
+  background: #ffffff;
   padding: 30px;
   border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
   font-weight: 500;
 }
 
-/* SOBRE */
+/* IMAGEM CENTRAL */
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+.image-center {
+  text-align: center;
 }
 
-.about img {
-  width: 100%;
-  border-radius: 18px;
+.image-center img {
+  width: 280px;
+  max-width: 90%;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
-/* DARK SECTION */
-
-.dark {
-  background: #0f172a;
-  color: white;
-  border-radius: 20px;
-}
+/* STEPS */
 
 .steps {
   display: grid;
@@ -123,8 +120,8 @@ body {
 .step span {
   display: block;
   font-size: 2rem;
-  font-weight: bold;
   color: #22c55e;
+  font-weight: bold;
 }
 
 /* CTA */
@@ -132,7 +129,7 @@ body {
 .cta {
   background: #e5e7eb;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 /* FOOTER */
@@ -149,9 +146,5 @@ footer {
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
-  }
-
-  .about {
-    grid-template-columns: 1fr;
   }
 }
