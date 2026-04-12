@@ -1,85 +1,146 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #1f2933;
   line-height: 1.6;
 }
 
+/* HERO */
+
 .hero {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+  height: 90vh;
+  background: linear-gradient(
+      rgba(15, 23, 42, 0.7),
+      rgba(15, 23, 42, 0.7)
+    ),
+    url("../images/hero-regiane.jpg") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 40px;
+  color: #ffffff;
 }
 
 .hero h1 {
-  max-width: 800px;
-  margin: 0 auto 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.btn-cta {
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+/* BOTÕES */
+
+.btn-primary,
+.btn-secondary {
   display: inline-block;
-  margin-top: 20px;
-  background: #22c55e;
-  color: #0f172a;
+  margin-top: 30px;
   padding: 15px 30px;
+  border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 8px;
 }
 
-.btn-cta:hover {
-  background: #16a34a;
+.btn-primary {
+  background: #22c55e;
+  color: #022c22;
 }
 
-.section {
-  padding: 60px 20px;
-  max-width: 900px;
+.btn-secondary {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+/* SEÇÕES */
+
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
   margin: auto;
 }
 
-.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
+/* BENEFITS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
 }
 
-.section ul {
-  list-style: none;
-  padding: 0;
+.card {
+  background: #f1f5f9;
+  padding: 25px;
+  border-radius: 12px;
+  font-weight: 500;
 }
 
-.section ul li {
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
+/* ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.section ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
+.about img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* PROCESS */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
   color: #22c55e;
 }
 
-.destaque {
-  background: #f8fafc;
+/* CTA */
+
+.cta {
+  background: #e5e7eb;
+  text-align: center;
+  border-radius: 16px;
 }
 
-.cta-final {
-  text-align: center;
-  background: #e5e7eb;
-}
+/* FOOTER */
 
 footer {
-  text-align: center;
-  padding: 20px;
   background: #0f172a;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 /* RESPONSIVO */
+
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
   }
 }
