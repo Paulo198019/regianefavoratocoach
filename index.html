@@ -1,90 +1,84 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Regiane Favorato</title>
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #0e0e0e;
-  color: #f5f5f5;
-  line-height: 1.6;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0e0e0e;
+      color: #ffffff;
+    }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
-}
+    header {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #000000, #1b1c1e);
+    }
 
-/* HERO */
-.hero {
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),
-    url("../img/regiane.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-}
+    h1 {
+      font-size: 48px;
+      color: #c9a14a;
+      margin-bottom: 10px;
+    }
 
-.hero-content {
-  max-width: 650px;
-}
+    h2 {
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  color: #c9a14a;
-}
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-h2 {
-  font-weight: 300;
-  margin-bottom: 20px;
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
 
-.section {
-  padding: 80px 0;
-}
+    .card {
+      background: #111111;
+      border: 1px solid #c9a14a;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
 
-.section.dark {
-  background: #1b1c1e;
-}
+    footer {
+      background: #000000;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #999999;
+    }
+  </style>
+</head>
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
+<body>
 
-.card {
-  background: #111;
-  border: 1px solid rgba(201,161,74,.3);
-  border-radius: 10px;
-  padding: 25px;
-  color: #b5b5b5;
-}
+<header>
+  <h1>Regiane Favorato</h1>
+  <h2>Coach & Mentoria de Carreira</h2>
+  <p>Clareza e direção para decisões profissionais com segurança.</p>
+</header>
 
-.btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 15px 32px;
-  background: #e06b6b;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: .3s;
-}
+<div class="container">
+  <div class="cards">
+    <div class="card">Clareza profissional</div>
+    <div class="card">Reposicionamento de carreira</div>
+    <div class="card">Tomada de decisão</div>
+    <div class="card">Propósito e autoconfiança</div>
+  </div>
+</div>
 
-.btn:hover {
-  background: #c75656;
-}
+<footer>
+  © 2026 · Regiane Favorato
+</footer>
 
-.footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #777;
-}
+</body>
+</html>
