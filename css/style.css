@@ -1,61 +1,39 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIÁVEIS */
-:root {
-  --bg-main: #0e0e0e;
-  --bg-dark: #1b1c1e;
-  --text-main: #f5f5f5;
-  --text-muted: #b5b5b5;
-  --gold: #c9a14a;
-  --btn: #e06b6b;
-  --btn-hover: #c75656;
-}
-
-/* BASE */
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--bg-main);
-  color: var(--text-main);
+  background: #0e0e0e;
+  color: #f5f5f5;
   line-height: 1.6;
 }
 
-/* CONTAINER */
 .container {
-  width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-/* HERO */
 .hero {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-    url("hero.jpg") center/cover no-repeat;
+    url("regiane.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
 }
 
-.hero-box {
-  max-width: 700px;
-}
-
-.stars {
-  color: var(--gold);
-  letter-spacing: 4px;
+.hero-content {
+  max-width: 650px;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3.4rem;
-  color: var(--gold);
-  margin: 10px 0;
+  color: #c9a14a;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -63,72 +41,42 @@ h2 {
   margin-bottom: 20px;
 }
 
-h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--gold);
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-/* SECTIONS */
 .section {
   padding: 80px 0;
 }
 
-.section-dark {
-  background: var(--bg-dark);
+.section.dark {
+  background: #1b1c1e;
 }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* CARD */
 .card {
   background: #111;
-  border: 1px solid rgba(201,161,74,0.25);
-  border-radius: 10px;
+  border: 1px solid rgba(201,161,74,.3);
   padding: 25px;
-  color: var(--text-muted);
+  border-radius: 10px;
 }
 
-/* LIST */
-.list {
-  list-style: none;
-}
-
-.list li {
-  margin-bottom: 12px;
-  color: var(--text-muted);
-}
-
-/* BUTTON */
-.btn-primary {
+.btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 14px 30px;
-  background: var(--btn);
+  padding: 15px 30px;
+  background: #e06b6b;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
   border-radius: 6px;
+  text-transform: uppercase;
   font-weight: 600;
-  transition: 0.3s;
 }
 
-.btn-primary:hover {
-  background: var(--btn-hover);
-}
-
-/* FOOTER */
 .footer {
   background: #000;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
-  color: #777;
+  font-size: .9rem;
 }
-``
