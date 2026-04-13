@@ -3,81 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <title>Regiane Favorato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0e0e0e;
-      color: #ffffff;
-    }
-
-    header {
-      padding: 100px 20px;
-      text-align: center;
-      background: linear-gradient(180deg, #000000, #1b1c1e);
-    }
-
-    h1 {
-      font-size: 48px;
-      color: #c9a14a;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-weight: normal;
-      margin-bottom: 30px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #111111;
-      border: 1px solid #c9a14a;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    footer {
-      background: #000000;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #999999;
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Regiane Favorato</h1>
-  <h2>Coach & Mentoria de Carreira</h2>
-  <p>Clareza e direção para decisões profissionais com segurança.</p>
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>Regiane Favorato</h1>
+      <h2>Coach & Mentoria de Carreira Executiva</h2>
+
+      <p>
+        Apoio profissionais e executivos a tomarem decisões estratégicas
+        de carreira, conquistarem clareza, reposicionamento e crescimento
+        com propósito.
+      </p>
+
+      <a href="#contato" class="btn">Agendar conversa</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="img/regiane.jpg" alt="Regiane Favorato">
+    </div>
+  </div>
 </header>
 
-<div class="container">
-  <div class="cards">
-    <div class="card">Clareza profissional</div>
-    <div class="card">Reposicionamento de carreira</div>
-    <div class="card">Tomada de decisão</div>
-    <div class="card">Propósito e autoconfiança</div>
-  </div>
-</div>
+<section class="section">
+  <div class="container">
+    <h3>Para quem é a mentoria</h3>
 
-<footer>
-  © 2026 · Regiane Favorato
+    <div class="cards">
+      <div class="card">Executivos e líderes em transição de carreira</div>
+      <div class="card">Profissionais em busca de crescimento estratégico</div>
+      <div class="card">Quem precisa tomar decisões profissionais importantes</div>
+      <div class="card">Quem busca mais sentido e clareza na carreira</div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <h3>O que você vai desenvolver</h3>
+
+    <ul class="list">
+      <li>✔ Clareza sobre objetivos profissionais</li>
+      <li>✔ Posicionamento e tomada de decisão</li>
+      <li>✔ Estratégia de carreira personalizada</li>
+      <li>✔ Autoconfiança e visão de longo prazo</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h3>Como funciona a mentoria</h3>
+
+    <p>
+      A mentoria é individual, confidencial e focada em resultados.
+      Os encontros são estruturados para entender seu momento atual,
+      identificar bloqueios, definir estratégias e construir um plano
+      claro de evolução profissional.
+    </p>
+  </div>
+</section>
+
+<section class="section dark" id="contato">
+  <div class="container">
+    <h3>Pronta para dar o próximo passo?</h3>
+
+    <p>
+      Agende uma conversa inicial para entendermos seu momento
+      e avaliar como a mentoria pode apoiar sua carreira.
+    </p>
+
+    <a href="https://wa.me/5511972969530" class="btn">
+      Falar com a Regiane no WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 • Regiane Favorato • Mentoria de Carreira Executiva
 </footer>
 
 </body>
