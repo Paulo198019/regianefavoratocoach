@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* VARIÁVEIS DE COR */
+/* CORES */
 :root {
   --bg-main: #0e0e0e;
   --bg-section: #1b1c1e;
@@ -25,7 +25,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 h1, h2 {
@@ -33,16 +33,15 @@ h1, h2 {
   color: var(--gold-main);
 }
 
-p {
+p, li {
   color: var(--text-secondary);
 }
 
 /* HERO */
 .hero {
-  background:
-    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-    url("assets/hero.jpg") center/cover no-repeat;
   min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,22 +49,23 @@ p {
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 720px;
   padding: 40px;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .stars {
   color: var(--gold-light);
-  letter-spacing: 3px;
-  font-size: 1.2rem;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 16px;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -75,50 +75,44 @@ p {
   background-color: var(--bg-section);
 }
 
-.section h2 {
-  margin-bottom: 40px;
-  font-size: 2.2rem;
-}
-
 /* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 24px;
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 40px auto;
 }
 
 .card {
   background-color: var(--bg-section);
   padding: 30px;
   border-radius: 10px;
-  border: 1px solid rgba(201,161,74,0.2);
-  color: var(--gold-main);
+  border: 1px solid rgba(201,161,74,0.२५);
 }
 
 /* LISTA */
 .list {
   list-style: none;
-  max-width: 500px;
-  margin: 0 auto 40px;
+  max-width: 520px;
+  margin: 30px auto;
   text-align: left;
 }
 
 .list li {
   margin-bottom: 12px;
-  color: var(--text-secondary);
 }
 
 /* BOTÕES */
 .btn-primary,
 .btn-secondary {
   display: inline-block;
+  padding: 14px 32px;
   text-decoration: none;
-  padding: 15px 30px;
   border-radius: 6px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 20px;
   transition: 0.3s;
 }
 
@@ -152,17 +146,11 @@ p {
   );
 }
 
-/* ABOUT */
-.about {
-  max-width: 900px;
-  margin: auto;
-}
-
 /* FOOTER */
 .footer {
   background-color: #000;
-  text-align: center;
   padding: 20px;
+  text-align: center;
   font-size: 0.9rem;
   color: #777;
 }
