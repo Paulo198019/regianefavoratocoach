@@ -35,7 +35,6 @@ body {
 .hero-text h1 {
   font-size: 3rem;
   color: #c9a14a;
-  margin-bottom: 10px;
 }
 
 .hero-text h2 {
@@ -47,18 +46,56 @@ body {
   color: #b5b5b5;
 }
 
-/* IMAGEM DA REGIANE — VIA CSS (GARANTIDA) */
+/* IMAGEM */
 .hero-image {
   width: 100%;
   max-width: 380px;
   height: 420px;
-
   background-image: url("../regiane.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
   border-radius: 14px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #e06b6b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* NOVO: REDES SOCIAIS */
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  background: rgba(201,161,74,0.2);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: #c9a14a;
 }
 
 /* SECTIONS */
@@ -72,7 +109,6 @@ body {
   background: #1b1c1e;
 }
 
-/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -86,25 +122,12 @@ body {
   border-radius: 8px;
 }
 
-/* LIST */
 .list {
   list-style: none;
 }
 
 .list li {
   margin-bottom: 12px;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: #e06b6b;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
 }
 
 /* FOOTER */
@@ -116,7 +139,7 @@ body {
   font-size: 14px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVO */
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -125,5 +148,9 @@ body {
 
   .hero-image {
     margin: 0 auto;
+  }
+
+  .social-links {
+    justify-content: center;
   }
 }
