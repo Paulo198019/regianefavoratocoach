@@ -5,126 +5,164 @@
   box-sizing: border-box;
 }
 
+/* VARIÁVEIS DE COR */
+:root {
+  --bg-main: #0e0e0e;
+  --bg-section: #1b1c1e;
+
+  --text-main: #f5f5f5;
+  --text-secondary: #9fa1a4;
+
+  --gold-main: #c9a14a;
+  --gold-light: #e6c678;
+
+  --btn-main: #e06b6b;
+  --btn-hover: #c75656;
+}
+
 /* BASE */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #0b1220;
-  color: #e5e7eb;
-  line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold-main);
 }
 
-.center {
-  text-align: center;
+p {
+  color: var(--text-secondary);
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #020617, #0f172a);
-  padding: 130px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("assets/hero.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 40px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #60a5fa; /* azul executivo */
 }
 
-.hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #cbd5f5;
+.stars {
+  color: var(--gold-light);
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section.dark {
+  background-color: var(--bg-section);
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.card {
+  background-color: var(--bg-section);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(201,161,74,0.2);
+  color: var(--gold-main);
+}
+
+/* LISTA */
+.list {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.list li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
 }
 
 /* BOTÕES */
 .btn-primary,
 .btn-secondary {
   display: inline-block;
-  margin-top: 30px;
-  padding: 16px 36px;
-  border-radius: 8px;
-  font-weight: bold;
   text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .btn-primary {
-  background: #2563eb;
-  color: #ffffff;
+  background-color: var(--btn-main);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover);
 }
 
 .btn-secondary {
-  background: #1e293b;
-  color: #ffffff;
+  border: 1px solid var(--gold-main);
+  color: var(--gold-main);
 }
 
-/* REDES SOCIAIS */
-.social {
-  margin-top: 25px;
+.btn-secondary:hover {
+  background-color: var(--gold-main);
+  color: #000;
 }
 
-.social a {
-  margin: 0 12px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #93c5fd;
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--gold-main),
+    transparent
+  );
 }
 
-/* SEÇÕES */
-.section {
-  padding: 90px 0;
+/* ABOUT */
+.about {
+  max-width: 900px;
+  margin: auto;
 }
 
-.section h2 {
+/* FOOTER */
+.footer {
+  background-color: #000;
   text-align: center;
-  margin-bottom: 40px;
-  color: #60a5fa;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
 }
-
-.light {
-  background: #020617;
-}
-
-.dark {
-  background: #020617;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: #020617;
-  border: 1px solid #1e293b;
-  padding: 30px;
-  border-radius: 14px;
-}
-
-/* ===== IMAGEM DA REGIANE (AJUSTE FINAL) ===== */
-.profile-img {
-  width: 260px;
-  max-width: 90%;
-  border-radius: 50%;
-  border: 4px solid #2563eb;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-  display: block;
-  margin: 0 auto;
-}
-
-/* ETAPAS / STEPS */
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-}
-
-.step span {
-  display: block;
