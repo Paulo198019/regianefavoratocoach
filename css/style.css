@@ -21,7 +21,10 @@ body {
 
 /* HERO */
 .hero {
+  min-height: 100vh;
   background: linear-gradient(#000, #1b1c1e);
+  display: flex;
+  align-items: center;
 }
 
 .hero-grid {
@@ -42,12 +45,24 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-image img {
-  max-width: 100%;
-  border-radius: 12px;
+.hero-text p {
+  color: #b5b5b5;
 }
 
-/* SECTIONS */
+/* IMAGEM — PONTO CRÍTICO */
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 14px;
+}
+
+/* SEÇÕES */
 .section h3 {
   color: #c9a14a;
   margin-bottom: 30px;
